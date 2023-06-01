@@ -1,9 +1,11 @@
 package com.week3;
 
 public class SavingsAccount extends Account {
-    double interestRate,interestBalance;
+    private double interestRate;
+    private  double interestBalance;
     public void calInterestBalance(){
-        interestBalance=balance*interestRate;
+        Account account=new Account();
+        interestBalance=account.GetBalance()*interestRate;
     }
 
 }

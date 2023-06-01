@@ -7,7 +7,8 @@ public class Bank extends Account {
         Account account=new Account();
         accountArray[i]=account; i++;
     }
-    double displayBalance(int index) {
-        return accountArray[index].balance;
+    double displayBalance(int ID) {
+        Account account=new Account();
+        return accountArray[ID].GetBalance();
     }
 }

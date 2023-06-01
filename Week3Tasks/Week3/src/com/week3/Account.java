@@ -1,13 +1,16 @@
 package com.week3;
 
 public class Account {
-    int accountNumber;
-    String accountHolderName;
-    double balance;
+    private long accountNumber;
+    private String accountHolderName;
+    private double balance;
     public Account(){
         accountNumber=0000;
-        accountHolderName="";
+        this.accountHolderName="";
         balance=0.0;
+    }
+    public double GetBalance(){
+        return balance;
     }
     public void withdraw(double withdrawed){
         if(withdrawed>balance)
